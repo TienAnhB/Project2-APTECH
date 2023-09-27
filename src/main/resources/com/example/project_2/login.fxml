@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="680.0" prefWidth="1070.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane fx:id="mainForm" prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <AnchorPane fx:id="SignIn" layoutX="14.0" layoutY="14.0" prefHeight="652.0" prefWidth="1042.0">
+               <children>
+                  <AnchorPane prefHeight="652.0" prefWidth="524.0" style="-fx-background-color: white;">
+                     <children>
+                        <Button fx:id="btn_signIn_signIn" layoutX="166.0" layoutY="409.0" minHeight="56.0" mnemonicParsing="false" prefWidth="182.0" style="-fx-background-color: #FF464D; -fx-background-radius: 100;" text="Sign In" textFill="WHITE">
+                           <font>
+                              <Font name="Catamaran ExtraBold" size="22.0" />
+                           </font>
+                        </Button>
+                        <Text layoutX="68.0" layoutY="213.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SIGN IN" textAlignment="CENTER" wrappingWidth="378.6719970703125">
+                           <font>
+                              <Font name="Catamaran ExtraBold" size="48.0" />
+                           </font>
+                        </Text>
+                        <TextField fx:id="txt_signIn_phone" layoutX="54.0" layoutY="254.0" prefHeight="61.0" prefWidth="405.0" promptText="     Phone" style="-fx-background-radius: 100; -fx-background-color: #E7E7E7;">
+                           <font>
+                              <Font name="Catamaran ExtraBold" size="22.0" />
+                           </font>
+                        </TextField>
+                        <PasswordField fx:id="txt_signIn_password" layoutX="54.0" layoutY="333.0" minHeight="61.0" prefWidth="405.0" promptText="     Password" style="-fx-background-color: #E7E7E7; -fx-background-radius: 100;">
+                           <font>
+                              <Font name="Catamaran ExtraBold" size="22.0" />
+                           </font>
+                        </PasswordField>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="524.0" prefHeight="652.0" prefWidth="518.0" style="-fx-background-color: linear-gradient(#FF7479, #FF5C63);">
+                     <Button fx:id="btn_signIn_signUp" layoutX="168.0" layoutY="298.0" minHeight="56.0" mnemonicParsing="false" onAction="#signUp" prefWidth="182.0" style="-fx-background-color: #FF464D; -fx-background-radius: 100;" text="Sign Up" textFill="WHITE">
+                        <font>
+                           <Font name="Catamaran ExtraBold" size="22.0" />
+                        </font>
+                     </Button>
+                     <Text fill="WHITE" layoutX="76.0" layoutY="272.0" strokeType="OUTSIDE" strokeWidth="0.0" text="HELLO, FRIEND!">
+                        <font>
+                           <Font name="Catamaran ExtraBold" size="48.0" />
+                        </font>
+                     </Text>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="SignUp" layoutX="14.0" layoutY="14.0" prefHeight="652.0" prefWidth="1042.0" visible="false">
+               <children>
+                  <AnchorPane prefHeight="652.0" prefWidth="524.0" style="-fx-background-color: linear-gradient(#FF7479, #FF5C63);;">
+                     <children>
+                        <Text fill="WHITE" layoutX="79.0" layoutY="300.0" strokeType="OUTSIDE" strokeWidth="0.0" text="WELCOME BACK">
+                           <font>
+                              <Font name="Catamaran ExtraBold" size="48.0" />
+                           </font>
+                        </Text>
+                        <Button fx:id="btn_signUp_signIn" layoutX="171.0" layoutY="334.0" minHeight="56.0" mnemonicParsing="false" onAction="#signIn" prefWidth="182.0" style="-fx-background-color: #FF464D; -fx-background-radius: 100; -fx-border-color: white; -fx-border-radius: 100;" text="Sign In" textFill="WHITE">
+                           <font>
+                              <Font name="Catamaran ExtraBold" size="22.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="524.0" prefHeight="652.0" prefWidth="518.0" style="-fx-background-color: white;">
+                     <children>
+                        <TextField fx:id="txt_signUp_name" layoutX="55.0" layoutY="170.0" prefHeight="61.0" prefWidth="405.0" promptText="     Name" style="-fx-background-radius: 100; -fx-background-color: #E7E7E7;">
+                           <font>
+                              <Font name="Catamaran ExtraBold" size="22.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="txt_signUp_phone" layoutX="55.0" layoutY="328.0" prefHeight="61.0" prefWidth="405.0" promptText="     Phone" style="-fx-background-radius: 100; -fx-background-color: #E7E7E7;">
+                           <font>
+                              <Font name="Catamaran ExtraBold" size="22.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="txt_signUp_password" layoutX="55.0" layoutY="405.0" prefHeight="61.0" prefWidth="405.0" promptText="     Password" style="-fx-background-radius: 100; -fx-background-color: #E7E7E7;">
+                           <font>
+                              <Font name="Catamaran ExtraBold" size="22.0" />
+                           </font>
+                        </TextField>
+                        <Button fx:id="btn_signUp_signUp" layoutX="168.0" layoutY="557.0" minHeight="56.0" mnemonicParsing="false" prefWidth="182.0" style="-fx-background-color: #FF464D; -fx-background-radius: 100;" text="Sign Up" textFill="WHITE">
+                           <font>
+                              <Font name="Catamaran ExtraBold" size="22.0" />
+                           </font>
+                        </Button>
+                        <Text layoutX="52.0" layoutY="144.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CREATE ACCOUNT">
+                           <font>
+                              <Font name="Catamaran ExtraBold" size="48.0" />
+                           </font>
+                        </Text>
+                        <TextField fx:id="txt_signUp_rePassword" layoutX="59.0" layoutY="479.0" prefHeight="61.0" prefWidth="405.0" promptText="      Confirm Password" style="-fx-background-radius: 100; -fx-background-color: #E7E7E7;">
+                           <font>
+                              <Font name="Catamaran ExtraBold" size="22.0" />
+                           </font>
+                        </TextField>
+                        <DatePicker fx:id="txt_signUp_dob" layoutX="167.0" layoutY="260.0" prefHeight="30.0" prefWidth="182.0" style="-fx-background-color: #E7E7E7; -fx-background-radius: 100;" />
+                        <Text fill="#b5b5b5" layoutX="91.0" layoutY="284.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DOB">
+                           <font>
+                              <Font name="Catamaran ExtraBold" size="22.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

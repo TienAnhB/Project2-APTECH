@@ -1,16 +1,8 @@
-module com.example.project2 {
+module com.example.project_2 {
     requires javafx.controls;
     requires javafx.fxml;
-    requires javafx.web;
 
-    requires org.controlsfx.controls;
-    requires com.dlsc.formsfx;
-    requires net.synedra.validatorfx;
-    requires org.kordamp.ikonli.javafx;
-    requires org.kordamp.bootstrapfx.core;
-    requires eu.hansolo.tilesfx;
-    requires com.almasb.fxgl.all;
 
-    opens com.example.project2 to javafx.fxml;
-    exports com.example.project2;
+    opens com.example.project_2 to javafx.fxml;
+    exports com.example.project_2;
 }
